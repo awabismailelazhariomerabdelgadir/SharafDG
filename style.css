@@ -1,0 +1,147 @@
+/* Core Styling Variables */
+:root {
+    --brand-color: rgb(255, 179, 0);
+    --banner-bg: rgb(205, 232, 241);
+    --dark-text: #212529;
+}
+
+/* Global Adjustments */
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: var(--dark-text);
+    background-color: #f8f9fa;
+}
+
+/* Header Section */
+.header-main {
+    background-color: var(--brand-color);
+}
+
+.search-container {
+    flex-grow: 1;
+    max-width: 500px;
+    margin: 0 15px;
+}
+
+.language-select {
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    cursor: pointer;
+}
+
+/* Categories Bar Hover Effects */
+.nav-categories .nav-link {
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-categories .nav-link:hover {
+    color: var(--brand-color) !important;
+    text-decoration: underline;
+}
+
+/* Product Cards */
+.product-card {
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1) !important;
+}
+
+.product-card img {
+    object-fit: contain;
+    height: 180px;
+}
+
+/* Promotional Banner */
+.promo-banner {
+    background-color: var(--banner-bg);
+    border-radius: 8px;
+}
+
+/* Responsive Overrides */
+@media (max-width: 576px) {
+    .search-container {
+        order: 3;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+}
+/* General Typography & Setup */
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #212529;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+/* Category Grid Cards */
+.category-card {
+    background-color: rgb(205, 232, 241);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    min-height: 100px;
+}
+
+.category-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    outline: 2px solid rgb(150, 205, 225);
+}
+
+.category-thumb {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+/* Brand Logos Section */
+.brand-logos img {
+    max-height: 50px;
+    width: auto;
+    filter: grayscale(20%);
+    transition: filter 0.2s ease, outline 0.2s ease;
+}
+
+.brand-logos img:hover {
+    filter: grayscale(0%);
+    outline: 2px solid #ff9214;
+}
+
+/* Promotional Banners */
+.promotional-banners img {
+    transition: outline 0.2s ease;
+}
+
+.promotional-banners img:hover {
+    outline: 3px solid #2626d2;
+}
+
+/* Footer Navigation Links */
+.footer-links a {
+    color: #495057;
+    text-decoration: none;
+    line-height: 2;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #9acd32;
+    text-decoration: underline;
+}
+
+/* Newsletter Custom Styling */
+.btn-primary {
+    background-color: rgb(38, 38, 210);
+    border-color: rgb(38, 38, 210);
+}
+
+.btn-primary:hover {
+    background-color: rgb(25, 25, 170);
+    border-color: rgb(25, 25, 170);
+}
