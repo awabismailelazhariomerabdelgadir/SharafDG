@@ -1,189 +1,147 @@
-.div01{
-    background-color: rgb(255, 179, 0);
-    height: 73px;
-}
-.div01 li{
-    padding-bottom: -50%;
-    padding-left: -50%;
-}
-.div01 h1{
-    padding-top: 10px;
-}
-ul{
-    list-style: none;
-    float: left;
-}
-.item01 li{
-    float: left;
+/* Core Styling Variables */
+:root {
+    --brand-color: rgb(255, 179, 0);
+    --banner-bg: rgb(205, 232, 241);
+    --dark-text: #212529;
 }
 
-.item01 a{
-    text-decoration: none;
+/* Global Adjustments */
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: var(--dark-text);
+    background-color: #f8f9fa;
 }
-.item02{
-    font-size: 30px;
-    height: 50px;
-    width: 500px;
-    padding-left: 30px;
-}
-.div02 li{
-    float: left;
-    font-size: 20px;
-    padding-left: 5px;
-    padding-top: 10px;
 
+/* Header Section */
+.header-main {
+    background-color: var(--brand-color);
 }
-.div02 h6{
-    font-size: 5px;
-}
-.div03{
-    padding-top: 20px;
-}
-.div03 select{
-    background-color: rgb(255, 179, 0);
-    font-size: larger;
-}
-.div03 li{
-    padding-right: 20px;
-}
-.div03 li a{
-    padding-top: 50px;
-    color: black;
-}
-.div03 li{
-    padding-left: 20px;
-}
-.div04 h6{
-    padding-right: 25px;
-}
-.div04 li a{
-    float: left;
-    padding-left: 20px;
-    text-decoration: none;
-    color: black;
-    padding-top: 10px;
-}
-.item08{
-    padding-top: 5px;
-}
-.div04 li{
-    float: left;
-    padding-right: 5px;
 
+.search-container {
+    flex-grow: 1;
+    max-width: 500px;
+    margin: 0 15px;
 }
-.div04 li a:hover{
+
+.language-select {
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    cursor: pointer;
+}
+
+/* Categories Bar Hover Effects */
+.nav-categories .nav-link {
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-categories .nav-link:hover {
+    color: var(--brand-color) !important;
     text-decoration: underline;
-    text-decoration: underline rgb(255, 179, 0);
+}
 
+/* Product Cards */
+.product-card {
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1) !important;
 }
-.div04 select{
-    font-size: large;
-}
-.div05 li img{
-    padding-right: 15px;
 
+.product-card img {
+    object-fit: contain;
+    height: 180px;
 }
-.div05 li{
-    float: left;
+
+/* Promotional Banner */
+.promo-banner {
+    background-color: var(--banner-bg);
+    border-radius: 8px;
 }
-.div06 li{
-    float: left;
+
+/* Responsive Overrides */
+@media (max-width: 576px) {
+    .search-container {
+        order: 3;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 10px;
+    }
 }
-.div07 a{
-    padding-left: 180px;
+/* General Typography & Setup */
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #212529;
 }
-.div08 a{
-    padding-left: 25px;
+
+h2 {
+    font-weight: 700;
 }
-.div09 li{
-    float: left;
-    padding-left: 40px;
-}
-h2{
-    text-align: center;
-}
-.div10{
+
+/* Category Grid Cards */
+.category-card {
     background-color: rgb(205, 232, 241);
-    padding-left: 30px;
-    height: 170px;
-    margin: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    min-height: 100px;
 }
-.div10 li{
-    float: left;
+
+.category-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    outline: 2px solid rgb(150, 205, 225);
 }
-.div10 li a{
+
+.category-thumb {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+/* Brand Logos Section */
+.brand-logos img {
+    max-height: 50px;
+    width: auto;
+    filter: grayscale(20%);
+    transition: filter 0.2s ease, outline 0.2s ease;
+}
+
+.brand-logos img:hover {
+    filter: grayscale(0%);
+    outline: 2px solid #ff9214;
+}
+
+/* Promotional Banners */
+.promotional-banners img {
+    transition: outline 0.2s ease;
+}
+
+.promotional-banners img:hover {
+    outline: 3px solid #2626d2;
+}
+
+/* Footer Navigation Links */
+.footer-links a {
+    color: #495057;
     text-decoration: none;
-    color: black;
+    line-height: 2;
+    transition: color 0.2s ease;
 }
-.div11 img{
-    padding-left: 30px;
+
+.footer-links a:hover {
+    color: #9acd32;
+    text-decoration: underline;
 }
-.div12 img{
-    padding-left: 40px;
-}
-.div13 img{
-    padding-left: 70px;
-}
-.div14 li{
-    float: left;
-    padding-left: 25px;
-}
-.div14 li a{
-    text-decoration: none;
-    color: black;
-}
-h4{
-    text-align: center;
-}
-.item04{
-   font-size: 20px;
-   width: 800px;
-}
-.item05{
-    list-style: none;
-    padding-left: 200px;
-}
-.item06{
+
+/* Newsletter Custom Styling */
+.btn-primary {
     background-color: rgb(38, 38, 210);
+    border-color: rgb(38, 38, 210);
 }
-.item07{
-    float: left;
-    list-style: none;
-    padding-left: 80px;
-}
-.div14 a:hover{
-    text-decoration: underline;
-    color: yellowgreen;
-}
-.div16 h1:hover{
-    text-decoration: underline;
-    color: rgb(220, 243, 6);
-}
-.div13 img:hover{
-    outline: auto;
-}
-.div12 img:hover{
-    outline: auto salmon;
-}
-.div11 img:hover{
-    outline: auto rgb(255, 146, 20);
-}
-.div05 img:hover{
-    outline: auto rgb(5, 25, 5);
-}
-.div06 img:hover{
-    outline: auto rgb(5, 25, 5);
-}
-.div17 img:hover{
-    outline: auto rgb(5, 25, 5);
-}
-.div08 img:hover{
-    outline: auto rgb(5, 25, 5);
-}
-.div09 img:hover{
-    outline: auto rgb(5, 25, 5);
-}
-.div10 :hover{
-    outline: auto rgb(205, 232, 241);
+
+.btn-primary:hover {
+    background-color: rgb(25, 25, 170);
+    border-color: rgb(25, 25, 170);
 }
